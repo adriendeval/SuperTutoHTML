@@ -680,6 +680,7 @@
     </div>
 </div>
 
+
 <!-- Balise iframe -->
 <div class="card">
     <div class="card-header">
@@ -690,16 +691,137 @@
 
         <!-- Code avec coloration Prism.js -->
         <pre><code class="language-html">
-&lt;iframe src="https://www.example.com" width="300" height="200" title="Exemple de page"&gt;
+&lt;iframe src="https://www.example.com" width="100%" height="300" title="Exemple de page"&gt;
 &lt;/iframe&gt;
         </code></pre>
 
         <!-- Résultat du code affiché -->
         <div class="code-output">
-            <iframe src="https://www.example.com" width="300" height="200" title="Exemple de page"></iframe>
+            <iframe src="https://www.example.com" width="100%" height="300" title="Exemple de page"></iframe>
         </div>
     </div>
 </div>
+
+
+<!-- Balise audio -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-volume-up-fill"></i> Lecture audio (&lt;audio&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;audio&gt;</code> permet d'intégrer des fichiers audio dans une page web. Vous pouvez spécifier plusieurs formats audio avec la balise <code>&lt;source&gt;</code> pour une meilleure compatibilité.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;audio controls&gt;
+  &lt;source src="audiofile.mp3" type="audio/mpeg"&gt;
+  Votre navigateur ne supporte pas la balise audio.
+&lt;/audio&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <audio controls>
+                <source src="audiofile.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas la balise audio.
+            </audio>
+        </div>
+    </div>
+</div>
+
+
+<!-- Balise video -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-film"></i> Lecture vidéo (&lt;video&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;video&gt;</code> est utilisée pour intégrer des vidéos dans une page web. Vous pouvez inclure plusieurs formats avec la balise <code>&lt;source&gt;</code> pour améliorer la compatibilité des navigateurs.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;video controls width="100%" height="300"&gt;
+  &lt;source src="videofile.mp4" type="video/mp4"&gt;
+  Votre navigateur ne supporte pas la balise vidéo.
+&lt;/video&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <video controls width="100%" height="300">
+                <source src="videofile.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+        </div>
+    </div>
+</div>
+
+
+<!-- Balise mark -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-highlight"></i> Surbrillance du texte (&lt;mark&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;mark&gt;</code> est utilisée pour mettre en évidence ou en surbrillance une partie de texte. Cela peut être utile pour souligner un point important.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;p&gt;Voici un exemple de texte avec &lt;mark&gt;une partie en surbrillance&lt;/mark&gt;.&lt;/p&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <p>Voici un exemple de texte avec <mark>une partie en surbrillance</mark>.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Balise abbr -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-fonts"></i> Abréviation (&lt;abbr&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;abbr&gt;</code> permet de définir une abréviation ou un acronyme. En passant la souris sur l'abréviation, une description ou une définition s'affiche si vous utilisez l'attribut <code>title</code>.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;p&gt;L'abréviation de &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt; signifie Hypertext Markup Language.&lt;/p&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <p>L'abréviation de <abbr title="Hypertext Markup Language">HTML</abbr> signifie Hypertext Markup Language.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Balise time -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-calendar"></i> Date et heure (&lt;time&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;time&gt;</code> est utilisée pour représenter une date ou une heure. Vous pouvez utiliser l'attribut <code>datetime</code> pour fournir une version machine-readable.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;p&gt;L'événement commencera à &lt;time datetime="2024-12-25T09:00"&gt;9h00, le 25 décembre 2024&lt;/time&gt;.&lt;/p&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <p>L'événement commencera à <time datetime="2024-12-25T09:00">9h00, le 25 décembre 2024</time>.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
 
     </section>
 
