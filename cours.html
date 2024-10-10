@@ -1,79 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Super Tuto HTML - Cours complet</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Super Tuto HTML - Cours complet</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
 
-    <body id="page-top">
+<body id="page-top">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-            <div class="container px-4">
-                <a class="navbar-brand" href="index.html">Super Tuto HTML</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="bases.html"><i class="bi bi-book"></i> Apprendre les bases</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="cours.html"><i class="bi bi-award"></i> Cours complets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-mailbox-flag"></i> Nous contacter</a></li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container px-4">
+            <!-- Logo ou nom du site -->
+            <a class="navbar-brand fw-bold" href="index.html">Super Tuto HTML</a>
+            <!-- Bouton pour le menu mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Liens de navigation -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door"></i> Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bases.html">
+                            <i class="bi bi-book"></i> Apprendre les bases
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cours.html">
+                            <i class="bi bi-award"></i> Cours complets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope"></i> Me contacter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
+
+    <header class="bg-primary bg-gradient text-white py-5 mt-5">
+        <div class="container px-4 text-center">
+            <h1 class="fw-bolder">Cours complets sur l'HTML</h1>
+            <p class="lead">Accédez à des documents détaillés pour apprendre l'HTML en profondeur.</p>
+        </div>
+    </header>
+
+    <!-- Card -->
+    <div class="card mx-auto my-5" style="width: 80%; max-width: 600px;">
+        <div class="card-header bg-primary text-white text-center">
+            <h3><i class="bi bi-file-earmark-pdf"></i> Télécharger le cours : "Les bases de l'HTML"</h3>
+        </div>
+        <div class="card-body text-center">
+            <p class="lead">Accédez au PDF complet pour apprendre les bases de l'HTML.</p>
+
+            <!-- Aperçu PDF -->
+            <embed src="files/Cours sur les bases de l'HTML.PDF" type="application/pdf" width="100%" height="400px" />
+
+            <!-- Taille du fichier et bouton de téléchargement -->
+            <p class="mt-3">Taille du fichier : <strong>51,8 Ko</strong></p>
+            <a href="files/Cours sur les bases de l'HTML.PDF" class="btn btn-lg btn-primary" download>
+                <i class="bi bi-download"></i> Télécharger le fichier PDF
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- Liens de navigation alignés à gauche avec icônes -->
+                <div class="col-md-6 text-md-start mb-3">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">
+                                <i class="bi bi-house-door"></i> Accueil
+                            </a></li>
+                        <li><a href="bases.html" class="text-white text-decoration-none">
+                                <i class="bi bi-book"></i> Apprendre les bases
+                            </a></li>
+                        <li><a href="cours.html" class="text-white text-decoration-none">
+                                <i class="bi bi-award"></i> Cours complets
+                            </a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">
+                                <i class="bi bi-envelope"></i> Me contacter
+                            </a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-
-        <header class="bg-primary bg-gradient text-white py-5 mt-5">
-            <div class="container px-4 text-center">
-                <h1 class="fw-bolder">Cours complets sur l'HTML</h1>
-                <p class="lead">Accédez à des documents détaillés pour apprendre l'HTML en profondeur.</p>
-            </div>
-        </header>
-
-        <!--
-        <section id="content">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>En construction...</h2>
-                        <p class="lead">Le cours complet sera bientôt disponible ! Nous travaillons activement à la création de plusieurs documents PDF pour vous fournir les meilleures explications sur le HTML.</p>
-                        <p class="lead">Revenez bientôt pour accéder aux documents. Merci de votre patience !</p>
-                    </div>
+                <!-- Informations légales alignées à droite -->
+                <div class="col-md-6 text-md-end mb-3">
+                    <h5>Informations légales</h5>
+                    <p>&copy; 2024 Super Tuto HTML. Tous droits réservés.</p>
+                    <p>Ce site est conçu pour apprendre les bases de l'HTML de manière simple et pratique.</p>
                 </div>
             </div>
-        </section>
-        -->
-
-        <div class="card mb-4">
-    <div class="card-header">
-        <h3><i class="bi bi-file-earmark-pdf"></i> Télécharger le cours : "Les bases de l'HTML"</h3>
-    </div>
-    <div class="card-body text-center">
-        <p class="lead">Accédez au PDF complet pour apprendre les bases de l'HTML.</p>
-        
-        <!-- Aperçu PDF -->
-        <embed src="files/Cours sur les bases de l'HTML.PDF" type="application/pdf" width="100%" height="400px" />
-
-        <!-- Taille du fichier et bouton de téléchargement -->
-        <p class="mt-3">Taille du fichier : <strong>51,82 Ko</strong></p>
-        <a href="files/Cours sur les bases de l'HTML.PDF" class="btn btn-lg btn-primary" download>
-            <i class="bi bi-download"></i> Télécharger le fichier PDF
-        </a>
-    </div>
         </div>
+    </footer>
 
-        <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Tout droit réservé &copy; Super Tuto HTML 2024</p></div>
-        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
+</body>
 
-    </body>
 </html>

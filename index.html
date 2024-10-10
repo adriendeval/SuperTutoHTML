@@ -1,119 +1,270 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Site d'apprentissage HTML" />
-        <meta name="author" content="Super Tuto HTML" />
-        <title>Super Tuto HTML</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-            <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">Super Tuto HTML</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="bases.html"><i class="bi bi-book"></i> Apprendre les bases</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cours.html"><i class="bi bi-award"></i> Cours complets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-mailbox-flag"></i> Nous contacter</a></li>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Site d'apprentissage HTML" />
+    <meta name="author" content="Super Tuto HTML" />
+    <title>Super Tuto HTML</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container px-4">
+            <!-- Logo ou nom du site -->
+            <a class="navbar-brand fw-bold" href="index.html">Super Tuto HTML</a>
+            <!-- Bouton pour le menu mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Liens de navigation -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="bi bi-house-door"></i> Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bases.html">
+                            <i class="bi bi-book"></i> Apprendre les bases
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cours.html">
+                            <i class="bi bi-award"></i> Cours complets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope"></i> Me contacter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
+
+    <!-- Header-->
+    <header class="bg-primary bg-gradient text-white py-5 mt-5">
+        <div class="container px-4 text-center">
+            <h1 class="fw-bolder">Bienvenue sur Super Tuto HTML</h1>
+            <p class="lead">Apprendre l'HTML n'a jamais été aussi simple.</p>
+        </div>
+    </header>
+
+    <!-- Section À propos améliorée -->
+    <section id="about" class="py-5">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bolder mb-4">À propos de Super Tuto HTML</h2>
+                    <p class="lead">Super Tuto HTML est conçu pour vous offrir une expérience d'apprentissage simple et
+                        efficace, spécialement adaptée aux débutants. Avec notre guide, vous allez apprendre :</p>
+
+                    <!-- Points clés avec icônes -->
+                    <div class="row text-center mt-4">
+                        <div class="col-lg-4 mb-4">
+                            <div class="icon mb-2">
+                                <i class="bi bi-code-square" style="font-size: 2.5rem; color: #007bff;"></i>
+                            </div>
+                            <h5 class="fw-bold">Les balises de base</h5>
+                            <p>Apprenez à utiliser les balises HTML essentielles pour structurer vos pages web.</p>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="icon mb-2">
+                                <i class="bi bi-layout-text-window-reverse"
+                                    style="font-size: 2.5rem; color: #28a745;"></i>
+                            </div>
+                            <h5 class="fw-bold">Structuration du contenu</h5>
+                            <p>Découvrez comment organiser correctement votre contenu pour une lecture optimale.</p>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="icon mb-2">
+                                <i class="bi bi-palette-fill" style="font-size: 2.5rem; color: #ffc107;"></i>
+                            </div>
+                            <h5 class="fw-bold">Introduction au CSS</h5>
+                            <p>Utilisez les bases du CSS pour styliser vos pages et améliorer l'apparence de vos sites.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Message d'accroche -->
+                    <div class="mt-4">
+                        <p class="lead">Notre objectif est de vous permettre de maîtriser les bases du développement web
+                            en toute simplicité.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Points forts section -->
+    <section class="bg-light py-5" id="features">
+        <div class="container px-4 text-center">
+            <h2 class="fw-bolder">Pourquoi choisir Super Tuto HTML ?</h2>
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-4 mb-4">
+                    <div class="icon mb-3">
+                        <i class="bi bi-check-circle-fill" style="font-size: 3rem; color: #4caf50;"></i>
+                    </div>
+                    <h4 class="fw-bolder">Simplicité</h4>
+                    <p>Apprentissage facile à suivre, même pour les débutants complets.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="icon mb-3">
+                        <i class="bi bi-laptop" style="font-size: 3rem; color: #2196f3;"></i>
+                    </div>
+                    <h4 class="fw-bolder">Exemples concrets</h4>
+                    <p>Des exemples pratiques pour comprendre et appliquer chaque concept.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="icon mb-3">
+                        <i class="bi bi-lightning-fill" style="font-size: 3rem; color: #f44336;"></i>
+                    </div>
+                    <h4 class="fw-bolder">Rapidité</h4>
+                    <p>Progressez rapidement grâce à des leçons claires et structurées.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Faits intéressants -->
+    <section class="py-5 bg-light" id="fun-facts">
+        <div class="container px-4 text-center">
+            <h2 class="fw-bolder">Faits intéressants sur l'HTML</h2>
+            <p class="lead mb-5">Découvrez quelques faits étonnants sur l'HTML et son impact</p>
+            <div class="row gx-4 justify-content-center">
+                <!-- Fait 1 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="icon mb-3">
+                                <i class="bi bi-code-slash" style="font-size: 3rem; color: #2196f3;"></i>
+                            </div>
+                            <h4 class="fw-bolder">1993</h4>
+                            <p>L'HTML a été créé en 1993 par Tim Berners-Lee, inventeur du Web.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fait 2 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="icon mb-3">
+                                <i class="bi bi-globe" style="font-size: 3rem; color: #f44336;"></i>
+                            </div>
+                            <h4 class="fw-bolder">4,5 milliards</h4>
+                            <p>Il y a plus de 4,5 milliards de pages web en ligne, toutes construites avec HTML.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fait 3 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="icon mb-3">
+                                <i class="bi bi-file-code" style="font-size: 3rem; color: #4caf50;"></i>
+                            </div>
+                            <h4 class="fw-bolder">HTML5</h4>
+                            <p>HTML5, la dernière version, a été publiée en 2014 avec de nombreuses nouvelles
+                                fonctionnalités pour le multimédia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services section avec deux boutons de redirection -->
+    <section class="bg-light py-5" id="services">
+        <div class="container px-4 text-center">
+            <h2 class="fw-bolder">Prêt(e) à commencer ?</h2>
+            <p class="lead">Nos cours sont <b>100% gratuits</b>. Téléchargez des documents PDF et apprenez à votre
+                rythme.</p>
+            <!-- Boutons de redirection vers les pages "bases" et "cours" -->
+            <div class="mt-4">
+                <a href="bases.html" class="btn btn-primary btn-lg me-2">Apprendre les Bases</a>
+                <a href="cours.html" class="btn btn-secondary btn-lg">Accéder aux Cours</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact section avec bouton de redirection -->
+    <section id="contact" class="py-5">
+        <div class="container px-4 text-center">
+            <h2 class="fw-bolder">Des questions ?</h2>
+            <p class="lead">Vous avez une question ou une suggestion ? Nous sommes là pour vous aider.</p>
+            <!-- Bouton redirigeant vers la page de contact -->
+            <a href="contact.html" class="btn btn-primary btn-lg mt-3">Nous Contacter</a>
+        </div>
+    </section>
+
+
+
+    <!-- Footer-->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- Liens de navigation alignés à gauche avec icônes -->
+                <div class="col-md-6 text-md-start mb-3">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">
+                                <i class="bi bi-house-door"></i> Accueil
+                            </a></li>
+                        <li><a href="bases.html" class="text-white text-decoration-none">
+                                <i class="bi bi-book"></i> Apprendre les bases
+                            </a></li>
+                        <li><a href="cours.html" class="text-white text-decoration-none">
+                                <i class="bi bi-award"></i> Cours complets
+                            </a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">
+                                <i class="bi bi-envelope"></i> Me contacter
+                            </a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-        <!-- Header-->
-        <header class="bg-primary bg-gradient text-white py-5 mt-5">
-            <div class="container px-4 text-center">
-                <h1 class="fw-bolder">Bienvenue sur Super Tuto HTML</h1>
-                <p class="lead">Apprendre l'HTML n'a jamais été aussi simple.</p>
-            </div>
-        </header>
-        
-        <!-- About section-->
-        <section id="about" class="py-5">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>À propos de nous</h2>
-                        <p class="lead">Ce site a été créé pour apprendre aux débutants les bases du langage HTML. Sur ce site, vous apprendrez :</p>
-                        <ul>
-                            <li>Comment utiliser les balises HTML de base</li>
-                            <li>Comment bien structurer vos documents HTML</li>
-                            <li>Les bases du CSS pour styliser vos pages</li>
-                        </ul>
-                    </div>
+                <!-- Informations légales alignées à droite -->
+                <div class="col-md-6 text-md-end mb-3">
+                    <h5>Informations légales</h5>
+                    <p>&copy; 2024 Super Tuto HTML. Tous droits réservés.</p>
+                    <p>Ce site est conçu pour apprendre les bases de l'HTML de manière simple et pratique.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </footer>
 
-        <!-- Points forts section -->
-        <section class="bg-light py-5" id="features">
-            <div class="container px-4 text-center">
-                <h2>Pourquoi choisir Super Tuto HTML ?</h2>
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="mb-4">
-                            <i class="bi bi-check-circle-fill" style="font-size: 3rem; color: #4caf50;"></i>
-                        </div>
-                        <h4 class="fw-bolder">Simplicité</h4>
-                        <p>Un apprentissage simple et facile à suivre pour tout le monde.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mb-4">
-                            <i class="bi bi-laptop" style="font-size: 3rem; color: #2196f3;"></i>
-                        </div>
-                        <h4 class="fw-bolder">Exemples concrets</h4>
-                        <p>Des exemples pratiques et concrets pour vous aider à comprendre chaque concept.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mb-4">
-                            <i class="bi bi-lightning-fill" style="font-size: 3rem; color: #f44336;"></i>
-                        </div>
-                        <h4 class="fw-bolder">Rapidité</h4>
-                        <p>Apprenez l'HTML rapidement et efficacement avec nos cours structurés.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Testimonials -->
-        <section class="py-5">
-            <div class="container px-4 text-center">
-                <blockquote class="blockquote">
-                    <p>"Apprendre l'HTML avec Super Tuto HTML m'a permis de réaliser mes propres projets web en un temps record. Un super site !"</p>
-                    <footer class="blockquote-footer">Un apprenant satisfait</footer>
-                </blockquote>
-            </div>
-        </section>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 
-        <!-- Services section-->
-        <section class="bg-light py-5" id="services">
-            <div class="container px-4 text-center">
-                <h2>Prêt(e) à apprendre ?</h2>
-                <p class="lead">Nos cours sont <b>100% gratuits</b>. Nous mettons également à disposition des documents PDF téléchargeables pour réviser hors ligne.</p>
-            </div>
-        </section>
-
-        <!-- Contact section-->
-        <section id="contact" class="py-5">
-            <div class="container px-4 text-center">
-                <h2>Vous avez une question ?</h2>
-                <p class="lead">N'hésitez pas à nous contacter pour toute question ou suggestion.</p>
-            </div>
-        </section>
-
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Tout droit réservé &copy; Super Tuto HTML 2024</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
 </html>

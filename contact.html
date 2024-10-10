@@ -13,25 +13,48 @@
 
 <body id="page-top">
 
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container px-4">
-            <a class="navbar-brand" href="index.html">Super Tuto HTML</a>
+            <!-- Logo ou nom du site -->
+            <a class="navbar-brand fw-bold" href="index.html">Super Tuto HTML</a>
+            <!-- Bouton pour le menu mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Liens de navigation -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="bases.html"><i class="bi bi-book"></i> Apprendre les
-                            bases</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cours.html"><i class="bi bi-award"></i> Cours
-                            complets</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html"><i
-                                class="bi bi-mailbox-flag"></i> Nous contacter</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door"></i> Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bases.html">
+                            <i class="bi bi-book"></i> Apprendre les bases
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cours.html">
+                            <i class="bi bi-award"></i> Cours complets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">
+                            <i class="bi bi-envelope"></i> Me contacter
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
 
     <header class="bg-primary bg-gradient text-white py-5 mt-5">
         <div class="container px-4 text-center">
@@ -40,33 +63,71 @@
         </div>
     </header>
 
-    <section id="content">
+    <section id="content" class="my-5">
         <div class="container px-4">
             <div class="row gx-4 justify-content-center">
                 <div class="col-lg-8">
-                    <h2>Formulaire de contact</h2>
+                    <h2 class="text-center mb-4">Formulaire de contact</h2>
 
                     <form action="https://formspree.io/f/mrbgzvep" method="POST">
-                        <div class="mb-3">
+                        <!-- Email Input -->
+                        <div class="mb-4">
                             <label for="email" class="form-label">Votre adresse mail :</label>
-                            <input type="email" class="form-control" id="email" name="email" required />
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Entrez votre email" required
+                                style="border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" />
                         </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Votre message :</label>
-                            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
-                    </form>
 
+                        <!-- Message Input -->
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Votre message :</label>
+                            <textarea class="form-control" id="message" name="message" rows="5"
+                                placeholder="Tapez votre message ici..." required
+                                style="border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg" style="border-radius: 0.5rem;">
+                                <i class="bi bi-send"></i> Envoyer
+                            </button>
+                        </div>
+                    </form>
 
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-5 bg-dark">
-        <div class="container px-4">
-            <p class="m-0 text-center text-white">Tout droit réservé &copy; Super Tuto HTML 2024</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- Liens de navigation alignés à gauche avec icônes -->
+                <div class="col-md-6 text-md-start mb-3">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">
+                                <i class="bi bi-house-door"></i> Accueil
+                            </a></li>
+                        <li><a href="bases.html" class="text-white text-decoration-none">
+                                <i class="bi bi-book"></i> Apprendre les bases
+                            </a></li>
+                        <li><a href="cours.html" class="text-white text-decoration-none">
+                                <i class="bi bi-award"></i> Cours complets
+                            </a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">
+                                <i class="bi bi-envelope"></i> Me contacter
+                            </a></li>
+                    </ul>
+                </div>
+                <!-- Informations légales alignées à droite -->
+                <div class="col-md-6 text-md-end mb-3">
+                    <h5>Informations légales</h5>
+                    <p>&copy; 2024 Super Tuto HTML. Tous droits réservés.</p>
+                    <p>Ce site est conçu pour apprendre les bases de l'HTML de manière simple et pratique.</p>
+                </div>
+            </div>
         </div>
     </footer>
 

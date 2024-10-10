@@ -37,15 +37,12 @@
 
         code {
             display: inline-block;
-            /* Assure que le code reste dans la ligne */
             background-color: #f8f9fa;
             padding: 2px 4px;
             border-radius: 3px;
             font-size: 0.9em;
             color: #d63384;
-            /* Une couleur pour différencier le code */
         }
-
 
         .btn-custom {
             background-color: #007bff;
@@ -73,18 +70,38 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container px-4">
-            <a class="navbar-brand" href="index.html">Super Tuto HTML</a>
+            <!-- Logo ou nom du site -->
+            <a class="navbar-brand fw-bold" href="index.html">Super Tuto HTML</a>
+            <!-- Bouton pour le menu mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Liens de navigation -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="bases.html"><i class="bi bi-book"></i> Apprendre les bases</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cours.html"><i class="bi bi-award"></i> Cours complets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-mailbox-flag"></i> Nous contacter</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door"></i> Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="bases.html">
+                            <i class="bi bi-book"></i> Apprendre les bases
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cours.html">
+                            <i class="bi bi-award"></i> Cours complets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope"></i> Me contacter
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -97,6 +114,140 @@
             <p class="lead">Explorez les balises essentielles pour créer vos premières pages web.</p>
         </div>
     </header>
+
+    
+    <!-- Sommaire sous forme de tableau amélioré avec style arrondi et texte centré -->
+<div class="container mt-5">
+    <div class="card shadow-sm border-0 rounded-4">
+        <div class="card-header bg-primary text-white text-center rounded-top-4">
+            <h4 class="mb-0">Sommaire des balises HTML</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-borderless text-center">
+                <tbody>
+                    <tr>
+                        <td><a href="#balises-de-titres" class="text-decoration-none text-dark sommaire-link">Balises de Titres (&lt;h1&gt; à &lt;h6&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-p" class="text-decoration-none text-dark sommaire-link">Paragraphe (&lt;p&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-a" class="text-decoration-none text-dark sommaire-link">Lien (&lt;a&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-img" class="text-decoration-none text-dark sommaire-link">Image (&lt;img&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balises-liste" class="text-decoration-none text-dark sommaire-link">Listes (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-table" class="text-decoration-none text-dark sommaire-link">Tableau (&lt;table&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-button" class="text-decoration-none text-dark sommaire-link">Bouton (&lt;button&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-title" class="text-decoration-none text-dark sommaire-link">Titre dans &lt;head&gt;</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-body" class="text-decoration-none text-dark sommaire-link">Contenu de la page (&lt;body&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#mise-en-forme" class="text-decoration-none text-dark sommaire-link">Mise en forme (&lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;sup&gt;, &lt;sub&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-code" class="text-decoration-none text-dark sommaire-link">Code source (&lt;code&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-form" class="text-decoration-none text-dark sommaire-link">Formulaire (&lt;form&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-input" class="text-decoration-none text-dark sommaire-link">Champs de saisie (&lt;input&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-select" class="text-decoration-none text-dark sommaire-link">Liste déroulante (&lt;select&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-textarea" class="text-decoration-none text-dark sommaire-link">Zone de texte (&lt;textarea&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-fieldset" class="text-decoration-none text-dark sommaire-link">Groupe de champs (&lt;fieldset&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-progress" class="text-decoration-none text-dark sommaire-link">Barre de progression (&lt;progress&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-meter" class="text-decoration-none text-dark sommaire-link">Jauge de mesure (&lt;meter&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-details" class="text-decoration-none text-dark sommaire-link">Détails cachés/révélés (&lt;details&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-figure" class="text-decoration-none text-dark sommaire-link">Figure avec légende (&lt;figure&gt;, &lt;figcaption&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-iframe" class="text-decoration-none text-dark sommaire-link">Encadrer une page (&lt;iframe&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-audio" class="text-decoration-none text-dark sommaire-link">Lecture audio (&lt;audio&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-video" class="text-decoration-none text-dark sommaire-link">Lecture vidéo (&lt;video&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-mark" class="text-decoration-none text-dark sommaire-link">Surbrillance (&lt;mark&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-abbr" class="text-decoration-none text-dark sommaire-link">Abréviation (&lt;abbr&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-label" class="text-decoration-none text-dark sommaire-link">Étiquette de formulaire (&lt;label&gt;)</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#balise-datalist" class="text-decoration-none text-dark sommaire-link">Liste de suggestions (&lt;datalist&gt;)</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Style personnalisé pour le sommaire arrondi et moderne avec texte centré -->
+<style>
+    .sommaire-link {
+        padding: 8px 0;
+        display: block;
+        border-radius: 10px;
+        transition: background-color 0.2s ease;
+    }
+
+    .sommaire-link:hover {
+        background-color: #f1f3f5;
+        text-decoration: none;
+    }
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .card-header {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .table-borderless tr {
+        transition: transform 0.2s ease;
+    }
+
+    .table-borderless tr:hover {
+        transform: scale(1.01);
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+</style>
+
     
 
     <!-- Content Section -->
@@ -106,14 +257,15 @@
         <h2 class="section-title">Les balises HTML essentielles</h2>
 
         <!-- Balise h1-h6 -->
-        <div class="card">
+        <div class="card" id="balises-de-titres">
             <div class="card-header">
                 <h3><i class="bi bi-type-h1"></i> Les titres (&lt;h1&gt; à &lt;h6&gt;)</h3>
             </div>
             <div class="card-body">
-                <p>Les balises de titre <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code> sont utilisées pour structurer vos titres de page. <code>&lt;h1&gt;</code> est le titre le plus important, et <code>&lt;h6&gt;</code> le moins important.</p>
-        
-                <!-- Code avec coloration Prism.js -->
+                <p>Les balises de titre <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code> sont utilisées pour structurer
+                    vos titres de page. <code>&lt;h1&gt;</code> est le titre le plus important, et
+                    <code>&lt;h6&gt;</code> le moins important.
+                </p>
                 <pre><code class="language-html">
         &lt;h1&gt;Titre principal&lt;/h1&gt;
         &lt;h2&gt;Sous-titre&lt;/h2&gt;
@@ -122,8 +274,6 @@
         &lt;h5&gt;Sous-sous-section&lt;/h5&gt;
         &lt;h6&gt;Titre de niveau inférieur&lt;/h6&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
                     <h1>Titre principal</h1>
                     <h2>Sous-titre</h2>
@@ -134,83 +284,68 @@
                 </div>
             </div>
         </div>
-        
-
 
         <!-- Balise p -->
-        <div class="card">
+        <div class="card" id="balise-p">
             <div class="card-header">
                 <h3><i class="bi bi-paragraph"></i> Paragraphe (&lt;p&gt;)</h3>
             </div>
             <div class="card-body">
-                <p>La balise <code>&lt;p&gt;</code> est utilisée pour créer un paragraphe. Elle permet de structurer le texte avec un espacement vertical automatique entre les paragraphes.</p>
-        
-                <!-- Code avec coloration Prism.js -->
+                <p>La balise <code>&lt;p&gt;</code> est utilisée pour créer un paragraphe. Elle permet de structurer le
+                    texte avec un espacement vertical automatique entre les paragraphes.</p>
                 <pre><code class="language-html">
         &lt;p&gt;Ceci est un paragraphe de texte.&lt;/p&gt;
         &lt;p&gt;Voici un autre paragraphe.&lt;/p&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
                     <p>Ceci est un paragraphe de texte.</p>
                     <p>Voici un autre paragraphe.</p>
                 </div>
             </div>
         </div>
-        
 
         <!-- Balise a -->
-        <div class="card">
+        <div class="card" id="balise-a">
             <div class="card-header">
                 <h3><i class="bi bi-link-45deg"></i> Lien (&lt;a&gt;)</h3>
             </div>
             <div class="card-body">
-                <p>La balise <code>&lt;a&gt;</code> permet de créer des liens hypertextes. L'attribut <code>href</code> spécifie l'URL cible du lien.</p>
-        
-                <!-- Code avec coloration Prism.js -->
+                <p>La balise <code>&lt;a&gt;</code> permet de créer des liens hypertextes. L'attribut <code>href</code>
+                    spécifie l'URL cible du lien.</p>
                 <pre><code class="language-html">
         &lt;a href="https://example.com"&gt;Cliquez ici pour visiter Example.com&lt;/a&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
                     <a href="https://example.com">Cliquez ici pour visiter Example.com</a>
                 </div>
             </div>
         </div>
-        
 
         <!-- Balise img -->
-        <div class="card">
+        <div class="card" id="balise-img">
             <div class="card-header">
                 <h3><i class="bi bi-image"></i> Image (&lt;img&gt;)</h3>
             </div>
             <div class="card-body">
-                <p>La balise <code>&lt;img&gt;</code> est utilisée pour afficher une image. L'attribut <code>src</code> indique le chemin de l'image et <code>alt</code> fournit une description alternative.</p>
-        
-                <!-- Code avec coloration Prism.js -->
+                <p>La balise <code>&lt;img&gt;</code> est utilisée pour afficher une image. L'attribut <code>src</code>
+                    indique le chemin de l'image et <code>alt</code> fournit une description alternative.</p>
                 <pre><code class="language-html">
         &lt;img src="image.jpg" alt="Description de l'image"&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
                     <img src="https://via.placeholder.com/150" alt="Exemple d'image">
                 </div>
             </div>
         </div>
-        
 
-        <!-- Balise ul-li -->
-        <div class="card">
+        <!-- Balises ul-li (ajout ol aussi) -->
+        <div class="card" id="balises-liste">
             <div class="card-header">
                 <h3><i class="bi bi-list"></i> Listes (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;)</h3>
             </div>
             <div class="card-body">
-                <p>Les balises <code>&lt;ul&gt;</code> (liste non ordonnée) et <code>&lt;ol&gt;</code> (liste ordonnée) contiennent des éléments de liste définis par <code>&lt;li&gt;</code>.</p>
-        
-                <!-- Code avec coloration Prism.js -->
+                <p>Les balises <code>&lt;ul&gt;</code> (liste non ordonnée) et <code>&lt;ol&gt;</code> (liste ordonnée)
+                    contiennent des éléments de liste définis par <code>&lt;li&gt;</code>.</p>
                 <pre><code class="language-html">
         &lt;ul&gt;
           &lt;li&gt;Élément 1&lt;/li&gt;
@@ -222,8 +357,6 @@
           &lt;li&gt;Deuxième élément&lt;/li&gt;
         &lt;/ol&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
                     <ul>
                         <li>Élément 1</li>
@@ -236,17 +369,16 @@
                 </div>
             </div>
         </div>
-        
 
         <!-- Balise table -->
-        <div class="card">
+        <div class="card" id="balise-table">
             <div class="card-header">
                 <h3><i class="bi bi-table"></i> Tableau (&lt;table&gt;, &lt;th&gt;, &lt;tr&gt;, &lt;td&gt;)</h3>
             </div>
             <div class="card-body">
-                <p>La balise <code>&lt;table&gt;</code> est utilisée pour créer des tableaux. Elle contient des lignes définies par <code>&lt;tr&gt;</code>, des en-têtes de colonnes avec <code>&lt;th&gt;</code>, et des cellules de données avec <code>&lt;td&gt;</code>.</p>
-        
-                <!-- Code avec coloration Prism.js -->
+                <p>La balise <code>&lt;table&gt;</code> est utilisée pour créer des tableaux. Elle contient des lignes
+                    définies par <code>&lt;tr&gt;</code>, des en-têtes de colonnes avec <code>&lt;th&gt;</code>, et des
+                    cellules de données avec <code>&lt;td&gt;</code>.</p>
                 <pre><code class="language-html">
         &lt;table&gt;
           &lt;tr&gt;
@@ -263,8 +395,6 @@
           &lt;/tr&gt;
         &lt;/table&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
                     <table class="table table-bordered">
                         <tr>
@@ -283,82 +413,70 @@
                 </div>
             </div>
         </div>
-        
-
 
         <!-- Balise button -->
-        <div class="card">
+        <div class="card" id="balise-button">
             <div class="card-header">
                 <h3><i class="bi bi-hand-index-thumb"></i> Boutons (&lt;button&gt;)</h3>
             </div>
             <div class="card-body">
-                <p>La balise <code>&lt;button&gt;</code> est utilisée pour créer un bouton cliquable, souvent utilisé dans les formulaires ou pour déclencher des actions.</p>
-        
-                <!-- Code avec coloration Prism.js -->
+                <p>La balise <code>&lt;button&gt;</code> est utilisée pour créer un bouton cliquable, souvent utilisé
+                    dans les formulaires ou pour déclencher des actions.</p>
                 <pre><code class="language-html">
         &lt;button&gt;Cliquez ici&lt;/button&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
                     <button class="btn btn-primary">Cliquez ici</button>
                 </div>
             </div>
         </div>
-        
 
         <!-- Balise title -->
-        <div class="card">
+        <div class="card" id="balise-title">
             <div class="card-header">
                 <h3><i class="bi bi-file-earmark-text"></i> Titre de la page (&lt;title&gt;) dans &lt;head&gt;</h3>
             </div>
             <div class="card-body">
-                <p>La balise <code>&lt;title&gt;</code> dans la balise <code>&lt;head&gt;</code> définit le titre de la page affiché dans l'onglet du navigateur.</p>
-        
-                <!-- Code avec coloration Prism.js -->
+                <p>La balise <code>&lt;title&gt;</code> dans la balise <code>&lt;head&gt;</code> définit le titre de la
+                    page affiché dans l'onglet du navigateur.</p>
                 <pre><code class="language-html">
         &lt;head&gt;
           &lt;title&gt;Titre de ma page&lt;/title&gt;
         &lt;/head&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
-                    <p><strong>Exemple :</strong> Le titre dans l'onglet de cette page est "Super Tuto HTML - Apprendre les bases".</p>
+                    <p><strong>Exemple :</strong> Le titre dans l'onglet de cette page est "Super Tuto HTML - Apprendre
+                        les bases".</p>
                 </div>
             </div>
         </div>
-        
 
         <!-- Balise body -->
-        <div class="card">
+        <div class="card" id="balise-body">
             <div class="card-header">
                 <h3><i class="bi bi-file-earmark-code"></i> Contenu de la page (&lt;body&gt;)</h3>
             </div>
             <div class="card-body">
-                <p>La balise <code>&lt;body&gt;</code> contient tout le contenu visible de votre page web, incluant les titres, paragraphes, images, etc.</p>
-        
-                <!-- Code avec coloration Prism.js -->
+                <p>La balise <code>&lt;body&gt;</code> contient tout le contenu visible de votre page web, incluant les
+                    titres, paragraphes, images, etc.</p>
                 <pre><code class="language-html">
         &lt;body&gt;
           &lt;h1&gt;Titre de la page&lt;/h1&gt;
           &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
         &lt;/body&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
                     <h1>Titre de la page</h1>
                     <p>Ceci est un paragraphe à l'intérieur de la balise <code>&lt;body&gt;</code>.</p>
                 </div>
             </div>
         </div>
-        
 
         <!-- Balises de mise en forme (b, u, i, sup, sub) -->
-        <div class="card">
+        <div class="card" id="mise-en-forme">
             <div class="card-header">
-                <h3><i class="bi bi-pencil-square"></i> Mise en forme du texte (&lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;sup&gt;, &lt;sub&gt;)</h3>
+                <h3><i class="bi bi-pencil-square"></i> Mise en forme du texte (&lt;b&gt;, &lt;i&gt;, &lt;u&gt;,
+                    &lt;sup&gt;, &lt;sub&gt;)</h3>
             </div>
             <div class="card-body">
                 <p>Les balises de mise en forme permettent d'ajouter du style au texte :</p>
@@ -369,8 +487,6 @@
                     <li><code>&lt;sup&gt;</code> : Texte en exposant</li>
                     <li><code>&lt;sub&gt;</code> : Texte en indice</li>
                 </ul>
-        
-                <!-- Code avec coloration Prism.js -->
                 <pre><code class="language-html">
         &lt;b&gt;Texte en gras&lt;/b&gt;
         &lt;i&gt;Texte en italique&lt;/i&gt;
@@ -378,8 +494,6 @@
         &lt;sup&gt;Texte en exposant&lt;/sup&gt;
         &lt;sub&gt;Texte en indice&lt;/sub&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
                     <p><b>Texte en gras</b></p>
                     <p><i>Texte en italique</i></p>
@@ -389,22 +503,18 @@
                 </div>
             </div>
         </div>
-        
 
         <!-- Balise code -->
-        <div class="card">
+        <div class="card" id="balise-code">
             <div class="card-header">
                 <h3><i class="bi bi-code-square"></i> Code source (&lt;code&gt;)</h3>
             </div>
             <div class="card-body">
-                <p>La balise <code>&lt;code&gt;</code> est utilisée pour afficher du code source. Elle permet de rendre le texte monospace et de différencier le code du reste du contenu.</p>
-        
-                <!-- Code avec coloration Prism.js -->
+                <p>La balise <code>&lt;code&gt;</code> est utilisée pour afficher du code source. Elle permet de rendre
+                    le texte monospace et de différencier le code du reste du contenu.</p>
                 <pre><code class="language-html">
         &lt;code&gt;console.log('Hello world');&lt;/code&gt;
                 </code></pre>
-        
-                <!-- Résultat du code affiché -->
                 <div class="code-output">
                     <p><code>console.log('Hello world');</code></p>
                 </div>
@@ -412,15 +522,15 @@
         </div>
 
         <!-- Balise form -->
-        <div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-ui-checks-grid"></i> Formulaire (&lt;form&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;form&gt;</code> est utilisée pour créer un formulaire interactif sur une page web. Elle permet de collecter des données de l'utilisateur, qui peuvent être envoyées à un serveur pour traitement.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <div class="card" id="balise-form">
+            <div class="card-header">
+                <h3><i class="bi bi-ui-checks-grid"></i> Formulaire (&lt;form&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;form&gt;</code> est utilisée pour créer un formulaire interactif sur une page
+                    web. Elle permet de collecter des données de l'utilisateur, qui peuvent être envoyées à un serveur
+                    pour traitement.</p>
+                <pre><code class="language-html">
 &lt;form action="/submit-form" method="POST"&gt;
   &lt;label for="name"&gt;Nom :&lt;/label&gt;
   &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
@@ -431,31 +541,29 @@
   &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
 &lt;/form&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <form action="/submit-form" method="POST">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email"><br><br>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
+                <div class="code-output">
+                    <form action="/submit-form" method="POST">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-<!-- Balise input -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-input-cursor-text"></i> Champs de saisie (&lt;input&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;input&gt;</code> est utilisée pour créer des champs de saisie dans les formulaires. Il existe différents types d'<code>&lt;input&gt;</code> tels que <code>text</code>, <code>email</code>, <code>password</code>, <code>checkbox</code>, et plus encore.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise input -->
+        <div class="card" id="balise-input">
+            <div class="card-header">
+                <h3><i class="bi bi-input-cursor-text"></i> Champs de saisie (&lt;input&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;input&gt;</code> est utilisée pour créer des champs de saisie dans les
+                    formulaires. Il existe différents types d'<code>&lt;input&gt;</code> tels que <code>text</code>,
+                    <code>email</code>, <code>password</code>, <code>checkbox</code>, et plus encore.
+                </p>
+                <pre><code class="language-html">
 &lt;form&gt;
   &lt;label for="username"&gt;Nom d'utilisateur :&lt;/label&gt;
   &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;&lt;br&gt;
@@ -470,34 +578,31 @@
   &lt;button type="submit"&gt;Se connecter&lt;/button&gt;
 &lt;/form&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <form>
-                <label for="username">Nom d'utilisateur :</label>
-                <input type="text" id="username" name="username"><br><br>
-                <label for="password">Mot de passe :</label>
-                <input type="password" id="password" name="password"><br><br>
-                <label>
-                    <input type="checkbox" name="remember"> Se souvenir de moi
-                </label><br><br>
-                <button type="submit" class="btn btn-primary">Se connecter</button>
-            </form>
+                <div class="code-output">
+                    <form>
+                        <label for="username">Nom d'utilisateur :</label>
+                        <input type="text" id="username" name="username"><br><br>
+                        <label for="password">Mot de passe :</label>
+                        <input type="password" id="password" name="password"><br><br>
+                        <label>
+                            <input type="checkbox" name="remember"> Se souvenir de moi
+                        </label><br><br>
+                        <button type="submit" class="btn btn-primary">Se connecter</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-<!-- Balise select -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-list"></i> Liste déroulante (&lt;select&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;select&gt;</code> est utilisée pour créer une liste déroulante permettant à l'utilisateur de choisir parmi plusieurs options. Les éléments de la liste sont définis par des balises <code>&lt;option&gt;</code>.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise select -->
+        <div class="card" id="balise-select">
+            <div class="card-header">
+                <h3><i class="bi bi-list"></i> Liste déroulante (&lt;select&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;select&gt;</code> est utilisée pour créer une liste déroulante permettant à
+                    l'utilisateur de choisir parmi plusieurs options. Les éléments de la liste sont définis par des
+                    balises <code>&lt;option&gt;</code>.</p>
+                <pre><code class="language-html">
 &lt;form&gt;
   &lt;label for="fruits"&gt;Choisissez un fruit :&lt;/label&gt;
   &lt;select id="fruits" name="fruits"&gt;
@@ -507,58 +612,53 @@
   &lt;/select&gt;
 &lt;/form&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <form>
-                <label for="fruits">Choisissez un fruit :</label>
-                <select id="fruits" name="fruits">
-                    <option value="apple">Pomme</option>
-                    <option value="banana">Banane</option>
-                    <option value="cherry">Cerise</option>
-                </select>
-            </form>
+                <div class="code-output">
+                    <form>
+                        <label for="fruits">Choisissez un fruit :</label>
+                        <select id="fruits" name="fruits">
+                            <option value="apple">Pomme</option>
+                            <option value="banana">Banane</option>
+                            <option value="cherry">Cerise</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<!-- Balise textarea -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-chat-square-text"></i> Zone de texte (&lt;textarea&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;textarea&gt;</code> permet de créer une zone de texte multilignes dans un formulaire. Elle est utile lorsque l'utilisateur doit entrer beaucoup de texte, comme des commentaires ou des descriptions.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise textarea -->
+        <div class="card" id="balise-textarea">
+            <div class="card-header">
+                <h3><i class="bi bi-chat-square-text"></i> Zone de texte (&lt;textarea&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;textarea&gt;</code> permet de créer une zone de texte multilignes dans un
+                    formulaire. Elle est utile lorsque l'utilisateur doit entrer beaucoup de texte, comme des
+                    commentaires ou des descriptions.</p>
+                <pre><code class="language-html">
 &lt;form&gt;
   &lt;label for="comments"&gt;Vos commentaires :&lt;/label&gt;&lt;br&gt;
   &lt;textarea id="comments" name="comments" rows="4" style="width: 100%;"&gt;&lt;/textarea&gt;
 &lt;/form&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <form>
-                <label for="comments">Vos commentaires :</label><br>
-                <textarea id="comments" name="comments" rows="4" style="width: 100%;"></textarea>
-            </form>
+                <div class="code-output">
+                    <form>
+                        <label for="comments">Vos commentaires :</label><br>
+                        <textarea id="comments" name="comments" rows="4" style="width: 100%;"></textarea>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-<!-- Balise fieldset -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-grid-1x2-fill"></i> Groupe de champs (&lt;fieldset&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;fieldset&gt;</code> est utilisée pour regrouper des éléments d'un formulaire, permettant de les organiser sous un même ensemble. Le contenu du <code>&lt;fieldset&gt;</code> peut être décrit par une balise <code>&lt;legend&gt;</code>.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise fieldset -->
+        <div class="card" id="balise-fieldset">
+            <div class="card-header">
+                <h3><i class="bi bi-grid-1x2-fill"></i> Groupe de champs (&lt;fieldset&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;fieldset&gt;</code> est utilisée pour regrouper des éléments d'un formulaire,
+                    permettant de les organiser sous un même ensemble. Le contenu du <code>&lt;fieldset&gt;</code> peut
+                    être décrit par une balise <code>&lt;legend&gt;</code>.</p>
+                <pre><code class="language-html">
 &lt;form&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Informations personnelles&lt;/legend&gt;
@@ -570,265 +670,303 @@
   &lt;/fieldset&gt;
 &lt;/form&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <form>
-                <fieldset>
-                    <legend>Informations personnelles</legend>
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name"><br><br>
-                    <label for="age">Âge :</label>
-                    <input type="number" id="age" name="age">
-                </fieldset>
-            </form>
+                <div class="code-output">
+                    <form>
+                        <fieldset>
+                            <legend>Informations personnelles</legend>
+                            <label for="name">Nom :</label>
+                            <input type="text" id="name" name="name"><br><br>
+                            <label for="age">Âge :</label>
+                            <input type="number" id="age" name="age">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<!-- Balise progress -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-bar-chart-line"></i> Barre de progression (&lt;progress&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;progress&gt;</code> est utilisée pour afficher une barre de progression, indiquant l'avancement d'une tâche ou d'un processus en pourcentage.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise progress -->
+        <div class="card" id="balise-progress">
+            <div class="card-header">
+                <h3><i class="bi bi-bar-chart-line"></i> Barre de progression (&lt;progress&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;progress&gt;</code> est utilisée pour afficher une barre de progression,
+                    indiquant l'avancement d'une tâche ou d'un processus en pourcentage.</p>
+                <pre><code class="language-html">
 &lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <label for="file">Progression du téléchargement :</label>
-            <progress id="file" value="70" max="100">70%</progress>
+                <div class="code-output">
+                    <label for="file">Progression du téléchargement :</label>
+                    <progress id="file" value="70" max="100">70%</progress>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<!-- Balise meter -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-speedometer2"></i> Jauge de mesure (&lt;meter&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;meter&gt;</code> est utilisée pour représenter une valeur dans une plage donnée, comme une jauge de performance, une capacité de batterie ou un indicateur de niveau.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise meter -->
+        <div class="card" id="balise-meter">
+            <div class="card-header">
+                <h3><i class="bi bi-speedometer2"></i> Jauge de mesure (&lt;meter&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;meter&gt;</code> est utilisée pour représenter une valeur dans une plage donnée,
+                    comme une jauge de performance, une capacité de batterie ou un indicateur de niveau.</p>
+                <pre><code class="language-html">
 &lt;meter value="0.6" min="0" max="1"&gt;60%&lt;/meter&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <label for="performance">Performance :</label>
-            <meter id="performance" value="0.6" min="0" max="1">60%</meter>
+                <div class="code-output">
+                    <label for="performance">Performance :</label>
+                    <meter id="performance" value="0.6" min="0" max="1">60%</meter>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<!-- Balise details -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-info-square-fill"></i> Détails cachés/révélés (&lt;details&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;details&gt;</code> est utilisée pour créer une section d'informations que l'utilisateur peut afficher ou masquer. Elle est souvent utilisée pour fournir des détails supplémentaires ou des informations secondaires.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise details -->
+        <div class="card" id="balise-details">
+            <div class="card-header">
+                <h3><i class="bi bi-info-square-fill"></i> Détails cachés/révélés (&lt;details&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;details&gt;</code> est utilisée pour créer une section d'informations que
+                    l'utilisateur peut afficher ou masquer. Elle est souvent utilisée pour fournir des détails
+                    supplémentaires ou des informations secondaires.</p>
+                <pre><code class="language-html">
 &lt;details&gt;
   &lt;summary&gt;Cliquez pour en savoir plus&lt;/summary&gt;
   Voici plus d'informations sur le sujet.
 &lt;/details&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <details>
-                <summary>Cliquez pour en savoir plus</summary>
-                Voici plus d'informations sur le sujet.
-            </details>
+                <div class="code-output">
+                    <details>
+                        <summary>Cliquez pour en savoir plus</summary>
+                        Voici plus d'informations sur le sujet.
+                    </details>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<!-- Balise figure, figcaption -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-image"></i> Figure avec légende (&lt;figure&gt; et &lt;figcaption&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;figure&gt;</code> est utilisée pour contenir du contenu graphique, comme des images, et la balise <code>&lt;figcaption&gt;</code> permet d'ajouter une légende à ce contenu. Cela est souvent utilisé pour donner du contexte à une image ou à un diagramme.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise figure, figcaption -->
+        <div class="card" id="balise-figure">
+            <div class="card-header">
+                <h3><i class="bi bi-image"></i> Figure avec légende (&lt;figure&gt; et &lt;figcaption&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;figure&gt;</code> est utilisée pour contenir du contenu graphique, comme des
+                    images, et la balise <code>&lt;figcaption&gt;</code> permet d'ajouter une légende à ce contenu. Cela
+                    est souvent utilisé pour donner du contexte à une image ou à un diagramme.</p>
+                <pre><code class="language-html">
 &lt;figure&gt;
   &lt;img src="https://via.placeholder.com/300" alt="Exemple d'image"&gt;
   &lt;figcaption&gt;Ceci est un exemple de légende pour l'image ci-dessus.&lt;/figcaption&gt;
 &lt;/figure&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <figure>
-                <img src="https://via.placeholder.com/300" alt="Exemple d'image">
-                <figcaption>Ceci est un exemple de légende pour l'image ci-dessus.</figcaption>
-            </figure>
+                <div class="code-output">
+                    <figure>
+                        <img src="https://via.placeholder.com/300" alt="Exemple d'image">
+                        <figcaption>Ceci est un exemple de légende pour l'image ci-dessus.</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-<!-- Balise iframe -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-window"></i> Encadrer une page (&lt;iframe&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;iframe&gt;</code> permet d'intégrer une autre page web dans la page actuelle. Elle est souvent utilisée pour afficher du contenu externe, comme des vidéos, des cartes, ou d'autres pages web.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise iframe -->
+        <div class="card" id="balise-iframe">
+            <div class="card-header">
+                <h3><i class="bi bi-window"></i> Encadrer une page (&lt;iframe&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;iframe&gt;</code> permet d'intégrer une autre page web dans la page actuelle.
+                    Elle est souvent utilisée pour afficher du contenu externe, comme des vidéos, des cartes, ou
+                    d'autres pages web.</p>
+                <pre><code class="language-html">
 &lt;iframe src="https://www.example.com" width="100%" height="300" title="Exemple de page"&gt;
 &lt;/iframe&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <iframe src="https://www.example.com" width="100%" height="300" title="Exemple de page"></iframe>
+                <div class="code-output">
+                    <iframe src="https://www.example.com" width="100%" height="300" title="Exemple de page"></iframe>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-<!-- Balise audio -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-volume-up-fill"></i> Lecture audio (&lt;audio&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;audio&gt;</code> permet d'intégrer des fichiers audio dans une page web. Vous pouvez spécifier plusieurs formats audio avec la balise <code>&lt;source&gt;</code> pour une meilleure compatibilité.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise audio -->
+        <div class="card" id="balise-audio">
+            <div class="card-header">
+                <h3><i class="bi bi-volume-up-fill"></i> Lecture audio (&lt;audio&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;audio&gt;</code> permet d'intégrer des fichiers audio dans une page web. Vous
+                    pouvez spécifier plusieurs formats audio avec la balise <code>&lt;source&gt;</code> pour une
+                    meilleure compatibilité.</p>
+                <pre><code class="language-html">
 &lt;audio controls&gt;
   &lt;source src="audiofile.mp3" type="audio/mpeg"&gt;
   Votre navigateur ne supporte pas la balise audio.
 &lt;/audio&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <audio controls>
-                <source src="assets/audiofile.mp3" type="audio/mpeg">
-                Votre navigateur ne supporte pas la balise audio.
-            </audio>
+                <div class="code-output">
+                    <audio controls>
+                        <source src="assets/audiofile.mp3" type="audio/mpeg">
+                        Votre navigateur ne supporte pas la balise audio.
+                    </audio>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-<!-- Balise video -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-film"></i> Lecture vidéo (&lt;video&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;video&gt;</code> est utilisée pour intégrer des vidéos dans une page web. Vous pouvez inclure plusieurs formats avec la balise <code>&lt;source&gt;</code> pour améliorer la compatibilité des navigateurs.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise video -->
+        <div class="card" id="balise-video">
+            <div class="card-header">
+                <h3><i class="bi bi-film"></i> Lecture vidéo (&lt;video&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;video&gt;</code> est utilisée pour intégrer des vidéos dans une page web. Vous
+                    pouvez inclure plusieurs formats avec la balise <code>&lt;source&gt;</code> pour améliorer la
+                    compatibilité des navigateurs.</p>
+                <pre><code class="language-html">
 &lt;video controls width="100%" height="300"&gt;
   &lt;source src="videofile.mp4" type="video/mp4"&gt;
   Votre navigateur ne supporte pas la balise vidéo.
 &lt;/video&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <video controls width="100%" height="300">
-                <source src="assets/videofile.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la balise vidéo.
-            </video>
+                <div class="code-output">
+                    <video controls width="100%" height="300">
+                        <source src="assets/videofile.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-<!-- Balise mark -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-highlight"></i> Surbrillance du texte (&lt;mark&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;mark&gt;</code> est utilisée pour mettre en évidence ou en surbrillance une partie de texte. Cela peut être utile pour souligner un point important.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise mark -->
+        <div class="card" id="balise-mark">
+            <div class="card-header">
+                <h3><i class="bi bi-pencil"></i> Surbrillance (&lt;mark&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;mark&gt;</code> est utilisée pour mettre en évidence ou en surbrillance une
+                    partie de texte. Cela peut être utile pour souligner un point important.</p>
+                <pre><code class="language-html">
 &lt;p&gt;Voici un exemple de texte avec &lt;mark&gt;une partie en surbrillance&lt;/mark&gt;.&lt;/p&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <p>Voici un exemple de texte avec <mark>une partie en surbrillance</mark>.</p>
+                <div class="code-output">
+                    <p>Voici un exemple de texte avec <mark>une partie en surbrillance</mark>.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-<!-- Balise abbr -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-fonts"></i> Abréviation (&lt;abbr&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;abbr&gt;</code> permet de définir une abréviation ou un acronyme. En passant la souris sur l'abréviation, une description ou une définition s'affiche si vous utilisez l'attribut <code>title</code>.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
+        <!-- Balise abbr -->
+        <div class="card" id="balise-abbr">
+            <div class="card-header">
+                <h3><i class="bi bi-fonts"></i> Abréviation (&lt;abbr&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;abbr&gt;</code> permet de définir une abréviation ou un acronyme. En passant la
+                    souris sur l'abréviation, une description ou une définition s'affiche si vous utilisez l'attribut
+                    <code>title</code>.
+                </p>
+                <pre><code class="language-html">
 &lt;p&gt;L'abréviation de &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt; signifie Hypertext Markup Language.&lt;/p&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <p>L'abréviation de <abbr title="Hypertext Markup Language">HTML</abbr> signifie Hypertext Markup Language.</p>
+                <div class="code-output">
+                    <p>L'abréviation de <abbr title="Hypertext Markup Language">HTML</abbr> signifie Hypertext Markup
+                        Language.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
+        <!-- Balise label -->
+        <div class="card" id="balise-label">
+            <div class="card-header">
+                <h3><i class="bi bi-tag"></i> Étiquette de formulaire (&lt;label&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;label&gt;</code> est utilisée pour associer une étiquette descriptive à un champ
+                    de formulaire. Elle permet d'améliorer l'accessibilité en liant clairement une description à son
+                    champ correspondant.</p>
+                <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label for="name"&gt;Nom :&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
 
-<!-- Balise time -->
-<div class="card">
-    <div class="card-header">
-        <h3><i class="bi bi-calendar"></i> Date et heure (&lt;time&gt;)</h3>
-    </div>
-    <div class="card-body">
-        <p>La balise <code>&lt;time&gt;</code> est utilisée pour représenter une date ou une heure. Vous pouvez utiliser l'attribut <code>datetime</code> pour fournir une version machine-readable.</p>
-
-        <!-- Code avec coloration Prism.js -->
-        <pre><code class="language-html">
-&lt;p&gt;L'événement commencera à &lt;time datetime="2024-12-25T09:00"&gt;9h00, le 25 décembre 2024&lt;/time&gt;.&lt;/p&gt;
+  &lt;label for="email"&gt;Email :&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+&lt;/form&gt;
         </code></pre>
-
-        <!-- Résultat du code affiché -->
-        <div class="code-output">
-            <p>L'événement commencera à <time datetime="2024-12-25T09:00">9h00, le 25 décembre 2024</time>.</p>
+                <div class="code-output">
+                    <form>
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email">
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-
-
-
+        <!-- Balise datalist -->
+        <div class="card" id="balise-datalist">
+            <div class="card-header">
+                <h3><i class="bi bi-list-task"></i> Liste de suggestions (&lt;datalist&gt;)</h3>
+            </div>
+            <div class="card-body">
+                <p>La balise <code>&lt;datalist&gt;</code> permet de créer une liste de suggestions pour un champ de
+                    saisie. L'utilisateur peut soit choisir une option dans la liste, soit entrer sa propre valeur.</p>
+                <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label for="browsers"&gt;Choisissez un navigateur :&lt;/label&gt;
+  &lt;input list="browsers" id="browser" name="browser" placeholder="Navigateur préféré"&gt;
+  
+  &lt;datalist id="browsers"&gt;
+    &lt;option value="Chrome"&gt;
+    &lt;option value="Firefox"&gt;
+    &lt;option value="Edge"&gt;
+    &lt;option value="Safari"&gt;
+    &lt;option value="Opera"&gt;
+  &lt;/datalist&gt;
+&lt;/form&gt;
+        </code></pre>
+                <div class="code-output">
+                    <form>
+                        <label for="browsers">Choisissez un navigateur :</label>
+                        <input list="browsers" id="browser" name="browser" placeholder="Navigateur préféré">
+                        <datalist id="browsers">
+                            <option value="Chrome">
+                            <option value="Firefox">
+                            <option value="Edge">
+                            <option value="Safari">
+                            <option value="Opera">
+                        </datalist>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container text-center text-white">
-            <p>&copy; Super Tuto HTML 2024</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-md-start mb-3">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">
+                                <i class="bi bi-house-door"></i> Accueil
+                            </a></li>
+                        <li><a href="bases.html" class="text-white text-decoration-none">
+                                <i class="bi bi-book"></i> Apprendre les bases
+                            </a></li>
+                        <li><a href="cours.html" class="text-white text-decoration-none">
+                                <i class="bi bi-award"></i> Cours complets
+                            </a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">
+                                <i class="bi bi-envelope"></i> Me contacter
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end mb-3">
+                    <h5>Informations légales</h5>
+                    <p>&copy; 2024 Super Tuto HTML. Tous droits réservés.</p>
+                    <p>Ce site est conçu pour apprendre les bases de l'HTML de manière simple et pratique.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
