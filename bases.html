@@ -410,8 +410,296 @@
                 </div>
             </div>
         </div>
-        
 
+        <!-- Balise form -->
+        <div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-ui-checks-grid"></i> Formulaire (&lt;form&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;form&gt;</code> est utilisée pour créer un formulaire interactif sur une page web. Elle permet de collecter des données de l'utilisateur, qui peuvent être envoyées à un serveur pour traitement.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;form action="/submit-form" method="POST"&gt;
+  &lt;label for="name"&gt;Nom :&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+  
+  &lt;label for="email"&gt;Email :&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+
+  &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
+&lt;/form&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <form action="/submit-form" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email"><br><br>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Balise input -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-input-cursor-text"></i> Champs de saisie (&lt;input&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;input&gt;</code> est utilisée pour créer des champs de saisie dans les formulaires. Il existe différents types d'<code>&lt;input&gt;</code> tels que <code>text</code>, <code>email</code>, <code>password</code>, <code>checkbox</code>, et plus encore.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label for="username"&gt;Nom d'utilisateur :&lt;/label&gt;
+  &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label for="password"&gt;Mot de passe :&lt;/label&gt;
+  &lt;input type="password" id="password" name="password"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;
+    &lt;input type="checkbox" name="remember"&gt; Se souvenir de moi
+  &lt;/label&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;button type="submit"&gt;Se connecter&lt;/button&gt;
+&lt;/form&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <form>
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password"><br><br>
+                <label>
+                    <input type="checkbox" name="remember"> Se souvenir de moi
+                </label><br><br>
+                <button type="submit" class="btn btn-primary">Se connecter</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Balise select -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-list"></i> Liste déroulante (&lt;select&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;select&gt;</code> est utilisée pour créer une liste déroulante permettant à l'utilisateur de choisir parmi plusieurs options. Les éléments de la liste sont définis par des balises <code>&lt;option&gt;</code>.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label for="fruits"&gt;Choisissez un fruit :&lt;/label&gt;
+  &lt;select id="fruits" name="fruits"&gt;
+    &lt;option value="apple"&gt;Pomme&lt;/option&gt;
+    &lt;option value="banana"&gt;Banane&lt;/option&gt;
+    &lt;option value="cherry"&gt;Cerise&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/form&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <form>
+                <label for="fruits">Choisissez un fruit :</label>
+                <select id="fruits" name="fruits">
+                    <option value="apple">Pomme</option>
+                    <option value="banana">Banane</option>
+                    <option value="cherry">Cerise</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Balise textarea -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-chat-square-text"></i> Zone de texte (&lt;textarea&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;textarea&gt;</code> permet de créer une zone de texte multilignes dans un formulaire. Elle est utile lorsque l'utilisateur doit entrer beaucoup de texte, comme des commentaires ou des descriptions.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label for="comments"&gt;Vos commentaires :&lt;/label&gt;&lt;br&gt;
+  &lt;textarea id="comments" name="comments" rows="4" cols="50"&gt;
+  &lt;/textarea&gt;
+&lt;/form&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <form>
+                <label for="comments">Vos commentaires :</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Balise fieldset -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-grid-1x2-fill"></i> Groupe de champs (&lt;fieldset&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;fieldset&gt;</code> est utilisée pour regrouper des éléments d'un formulaire, permettant de les organiser sous un même ensemble. Le contenu du <code>&lt;fieldset&gt;</code> peut être décrit par une balise <code>&lt;legend&gt;</code>.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Informations personnelles&lt;/legend&gt;
+    &lt;label for="name"&gt;Nom :&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label for="age"&gt;Âge :&lt;/label&gt;
+    &lt;input type="number" id="age" name="age"&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <form>
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="age">Âge :</label>
+                    <input type="number" id="age" name="age">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Balise progress -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-bar-chart-line"></i> Barre de progression (&lt;progress&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;progress&gt;</code> est utilisée pour afficher une barre de progression, indiquant l'avancement d'une tâche ou d'un processus en pourcentage.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <label for="file">Progression du téléchargement :</label>
+            <progress id="file" value="70" max="100">70%</progress>
+        </div>
+    </div>
+</div>
+
+<!-- Balise meter -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-speedometer2"></i> Jauge de mesure (&lt;meter&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;meter&gt;</code> est utilisée pour représenter une valeur dans une plage donnée, comme une jauge de performance, une capacité de batterie ou un indicateur de niveau.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;meter value="0.6" min="0" max="1"&gt;60%&lt;/meter&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <label for="performance">Performance :</label>
+            <meter id="performance" value="0.6" min="0" max="1">60%</meter>
+        </div>
+    </div>
+</div>
+
+<!-- Balise details -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-info-square-fill"></i> Détails cachés/révélés (&lt;details&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;details&gt;</code> est utilisée pour créer une section d'informations que l'utilisateur peut afficher ou masquer. Elle est souvent utilisée pour fournir des détails supplémentaires ou des informations secondaires.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;details&gt;
+  &lt;summary&gt;Cliquez pour en savoir plus&lt;/summary&gt;
+  Voici plus d'informations sur le sujet.
+&lt;/details&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <details>
+                <summary>Cliquez pour en savoir plus</summary>
+                Voici plus d'informations sur le sujet.
+            </details>
+        </div>
+    </div>
+</div>
+
+<!-- Balise figure, figcaption -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-image"></i> Figure avec légende (&lt;figure&gt; et &lt;figcaption&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;figure&gt;</code> est utilisée pour contenir du contenu graphique, comme des images, et la balise <code>&lt;figcaption&gt;</code> permet d'ajouter une légende à ce contenu. Cela est souvent utilisé pour donner du contexte à une image ou à un diagramme.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;figure&gt;
+  &lt;img src="https://via.placeholder.com/300" alt="Exemple d'image"&gt;
+  &lt;figcaption&gt;Ceci est un exemple de légende pour l'image ci-dessus.&lt;/figcaption&gt;
+&lt;/figure&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <figure>
+                <img src="https://via.placeholder.com/300" alt="Exemple d'image">
+                <figcaption>Ceci est un exemple de légende pour l'image ci-dessus.</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<!-- Balise iframe -->
+<div class="card">
+    <div class="card-header">
+        <h3><i class="bi bi-window"></i> Encadrer une page (&lt;iframe&gt;)</h3>
+    </div>
+    <div class="card-body">
+        <p>La balise <code>&lt;iframe&gt;</code> permet d'intégrer une autre page web dans la page actuelle. Elle est souvent utilisée pour afficher du contenu externe, comme des vidéos, des cartes, ou d'autres pages web.</p>
+
+        <!-- Code avec coloration Prism.js -->
+        <pre><code class="language-html">
+&lt;iframe src="https://www.example.com" width="300" height="200" title="Exemple de page"&gt;
+&lt;/iframe&gt;
+        </code></pre>
+
+        <!-- Résultat du code affiché -->
+        <div class="code-output">
+            <iframe src="https://www.example.com" width="300" height="200" title="Exemple de page"></iframe>
+        </div>
+    </div>
+</div>
 
     </section>
 
